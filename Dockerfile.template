@@ -29,10 +29,10 @@ RUN git clone https://github.com/rajeshm1/kernel-build-gpio.git .
  RUN apt-get -y install kmod
 
 # Copy your kernel source from your local build context to the build directory
-# COPY gpio_module .
+COPY example_module .
 
 # Set the name of the directory where you have copied your kernel source in the step above
-ENV MOD_DIR "gpio_module"
+ENV MOD_DIR "example_module"
 
 # Set the balena OS version you intend to use
 ENV OS_VERSION '2.99.27'
@@ -44,7 +44,7 @@ RUN BALENA_MACHINE_NAME=%%BALENA_MACHINE_NAME%% ./build.sh build --device %%BALE
 FROM debian
 
 # Set the directory where you would like your kernel source
-ARG MOD_PATH=/usr/src/app/output
+ARG MOD_PATH=/etc/output
 ENV MOD_DIR gpio_module
 
 # Required for access when the container starts
