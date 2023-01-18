@@ -41,7 +41,7 @@ ENV OS_VERSION '2.99.27'
 RUN BALENA_MACHINE_NAME=%%BALENA_MACHINE_NAME%% ./build.sh build --device %%BALENA_MACHINE_NAME%% --os-version "$OS_VERSION" --src "$MOD_DIR"
 
 
-FROM debian
+FROM alpine
 
 # Set the directory where you would like your kernel source
 ARG MOD_PATH=/etc/output
