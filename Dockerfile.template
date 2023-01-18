@@ -24,6 +24,10 @@ RUN git clone https://github.com/rajeshm1/kernel-build-gpio.git .
 # You can switch to a specific commit of the kernel builder if you want to ensure consistent builds
 # git reset --hard f889851c5d00890b51b27c63eaa59a976063265a
 
+ RUN apt-get -y update
+ RUN apt-get -y install vim nano
+ RUN apt-get -y install kmod
+
 # Copy your kernel source from your local build context to the build directory
 # COPY gpio_module .
 
