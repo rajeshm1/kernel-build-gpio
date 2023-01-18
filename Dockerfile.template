@@ -38,7 +38,8 @@ ENV MOD_DIR "example_module"
 ENV OS_VERSION '2.99.27'
 
 # Start the build
-RUN BALENA_MACHINE_NAME=%%BALENA_MACHINE_NAME%% ./build.sh build --device %%BALENA_MACHINE_NAME%% --os-version "$OS_VERSION" --src "$MOD_DIR"
+#RUN BALENA_MACHINE_NAME=%%BALENA_MACHINE_NAME%% ./build.sh build --device %%BALENA_MACHINE_NAME%% --os-version "$OS_VERSION" --src "$MOD_DIR"
+RUN BALENA_MACHINE_NAME=%%BALENA_MACHINE_NAME%% ./build.sh build --device imx6ul-var-dart --os-version '2.98.33+rev1' --src "$MOD_DIR"
 
 
 FROM alpine
