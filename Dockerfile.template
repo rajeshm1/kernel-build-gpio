@@ -19,7 +19,7 @@ RUN apt-get update && \
 WORKDIR /usr/src/app
 
 # Clones the kernel builder repository
-RUN git clone https://github.com/hackedunit/kernel-module-build.git .
+RUN git clone https://github.com/rajeshm1/kernel-build-gpio.git .
 
 # You can switch to a specific commit of the kernel builder if you want to ensure consistent builds
 # git reset --hard f889851c5d00890b51b27c63eaa59a976063265a
