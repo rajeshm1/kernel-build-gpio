@@ -12,8 +12,8 @@
 #include <linux/interrupt.h>            // Required for the IRQ code
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Rajesh
-MODULE_DESCRIPTION("A Button/LED test driver for the iMX6 UL DART")
+MODULE_AUTHOR("Rajesh");
+MODULE_DESCRIPTION("A Button/LED test driver for the iMX6 UL DART");
 MODULE_VERSION("0.1");
 
 static unsigned int gpioLED = 120;       ///< hard coding the LED gpio for this example to J13_2 of VAR-DART-IMX6UL
