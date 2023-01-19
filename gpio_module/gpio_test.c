@@ -92,3 +92,6 @@ static irq_handler_t ebbgpio_irq_handler(unsigned int irq, void *dev_id, struct 
 
 module_init(ebbgpio_init);
 module_exit(ebbgpio_exit);
+
+
+
