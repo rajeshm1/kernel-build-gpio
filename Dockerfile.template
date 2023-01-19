@@ -21,8 +21,8 @@ WORKDIR /usr/src/app
 # Clones the kernel builder repository
 RUN git clone https://github.com/rajeshm1/kernel-build-gpio.git .
 
-RUN apt-get -y update
-RUN apt-get -y install vim nano
+#RUN apt-get -y update
+#RUN apt-get -y install vim nano
 RUN apt-get -y install kmod
  
 # You can switch to a specific commit of the kernel builder if you want to ensure consistent builds
