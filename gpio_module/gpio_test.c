@@ -14,7 +14,7 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Rajesh");
 MODULE_DESCRIPTION("A Button/LED test driver for the iMX6 UL DART");
-MODULE_VERSION("0.1");
+MODULE_VERSION("1.0");
 
 static unsigned int gpioLED = 120;       ///< hard coding the LED gpio for this example to J13_2 of VAR-DART-IMX6UL
 static unsigned int gpioButton = 0;  ///< hard coding the button gpio for this example to SW4 of VAR-DART-IMX6UL (GPIO1[0])
